@@ -11,7 +11,6 @@ import web.dao.CarDao;
 import java.util.Arrays;
 
 @Controller
-//@RequestMapping("/cars")
 public class CarController {
 
     private final CarDao carDao;
@@ -23,8 +22,6 @@ public class CarController {
 
     @GetMapping("/cars")
     public String getCars(@RequestParam(value = "count", defaultValue = "5") int allCars, Model cars) {
-//         получить все авто из дао на отображение в представление
-//        cars.addAttribute("cars", carDao.index());
         cars.addAttribute("cars", carDao.numberOfCars(CarDao.listCar, allCars));
         return "cars";
     }

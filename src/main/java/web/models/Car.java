@@ -3,12 +3,12 @@ package web.models;
 public class Car {
     private String model;
     private String color;
-    private String engine;
+    private String racer;
 
-    public Car(String model, String color, String engine) {
+    public Car(String model, String color, String racer) {
         this.model = model;
         this.color = color;
-        this.engine = engine;
+        this.racer = racer;
     }
 
     public String getModel() {
@@ -27,11 +27,11 @@ public class Car {
         this.color = color;
     }
 
-    public String getEngine() {
-        return engine;
+    public String getRacer() {
+        return racer;
     }
 
-    public void setEngine(String engine) {
-        this.engine = engine;
+    public void setEngine(String racer) {
+        this.racer = racer;
     }
 }

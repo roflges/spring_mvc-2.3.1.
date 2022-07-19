@@ -13,14 +13,14 @@
     <tr>
         <th scope="col">Model</th>
         <th scope="col">Color</th>
-        <th scope="col">Engine</th>
+        <th scope="col">Racer</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="cars: ${cars}">
         <td th:text="${cars.model}"/>
         <td th:text="${cars.color}"/>
-        <td th:text="${cars.engine}"/>
+        <td th:text="${cars.racer}"/>
     </tr>
     </tbody>
 </table>
